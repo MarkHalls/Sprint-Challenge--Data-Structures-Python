@@ -64,6 +64,11 @@ for name_2 in names_2:
 for name_1 in names_1:
     if bst.contains(name_1):
         duplicates.append(name_1)
+"""
+---------------------------------
+Original problem is O(n*m) since the 2 datasets are not guaranteed to be the same. Optimally if the files are the same length if would be O(n^2)
+---------------------------------
+"""
 
 end_time = time.time()
 print(f"{len(duplicates)} duplicates:\n\n{', '.join(duplicates)}\n\n")
