@@ -53,6 +53,15 @@ class RingBuffer:
 
 # ----------------Stretch Goal-------------------
 
+"""
+The main disadvantage I see to this is that the buffer must be contiguous in memory. 
+
+The big advantage is the implementation is much simpler. 
+
+I think the disadvante in arrays this overcomes is needing to copy the array to a new portion of memory when we add or remove items
+
+"""
+
 
 class ArrayRingBuffer:
     def __init__(self, capacity):
